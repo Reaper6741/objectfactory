@@ -15,9 +15,19 @@ public class Donuts {
         //dont say void
         //has to match exactly name of class
 
-    public Donuts(){
+    public Donuts(int pNumberOfDonuts){
         frostingType = "boston creme";
         hasfilling = true;
-        numberOfDonuts = 3;
+        numberOfDonuts = pNumberOfDonuts;
+    }//end constructor
+    //todo: make a method called printinfo
+
+    public void printInfo(){
+    //todo: use souts to print the instance variables
+        System.out.println("the type of creme is " + frostingType);
+        System.out.println("its " + hasfilling + " that the donut has filling");
+        System.out.println(numberOfDonuts + " donuts");
     }
+
+
 }
